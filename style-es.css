@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Encabezado */
+  header {
+    background: linear-gradient(to right, #6ad4c6e5, #0c91a8e8);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .language-switch {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .language-switch a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Secciones */
+  main section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  section p,
+  section ul {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  /* Imagen de perfil */
+  img {
+    max-width: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 3rem auto 1rem auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Botón de WhatsApp */
+  .btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #1ebe5d;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    font-size: 0.9rem;
+  }
+  
+  /* Animación */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  
+    img {
+      max-width: 120px;
+    }
+  }
+  
